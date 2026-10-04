@@ -1,0 +1,6 @@
+id=mztkill
+name=MZT Root-Kill Blocker
+version=v1.1
+versionCode=2
+author=dsh
+description=屏蔽闽政通(net.evecom.android.mztapp)的 root 检测反应：Zygisk 原生拦截 Process.sendSignal / kill(self,SIGKILL)，并把 DEC 反应链方法改成空操作。v1.1：不再改写 android.app.Dialog.show()（v1.0 会导致登录验证码弹窗 NPE、界面无反应）

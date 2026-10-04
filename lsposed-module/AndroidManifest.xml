@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mzt.roothide"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="34" />
+
+    <application android:label="MZT RootHide">
+        <meta-data android:name="xposedmodule" android:value="true" />
+        <meta-data android:name="xposeddescription"
+            android:value="屏蔽闽政通(net.evecom.android.mztapp)的 root 检测反应：DEC 弹窗 + 自杀式杀进程（含 System.exit / sendSignal），并隐藏 Xposed 痕迹" />
+        <meta-data android:name="xposedminversion" android:value="93" />
+    </application>
+</manifest>

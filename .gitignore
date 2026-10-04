@@ -1,0 +1,26 @@
+# 构建产物
+build/
+*.apk
+*.zip
+*.apk.idsig
+*.jks
+*.keystore
+
+# Zygisk 编译输出
+zygisk-module/zygisk/
+*.so
+
+# 本地工具链（体积大，不入库）
+toolchain/
+downloads/
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# 抓包 / 调试产物
+*.log
+*.png
