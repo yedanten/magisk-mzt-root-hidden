@@ -1,7 +1,27 @@
-# magisk-mzt-root-hidden
+<div align="center">
 
-针对 **闽政通（`net.evecom.android.mztapp`）** Root 检测的「反应层」屏蔽模块 —— 一套 Magisk / Zygisk 原生模块 + 一份（历史存档的）LSPosed 模块源码。
+  # magisk-mzt-root-hidden
 
+  **闽政通（`net.evecom.android.mztapp`）Root 检测「反应层」屏蔽 —— Magisk / Zygisk 原生模块 +（历史存档的）LSPosed 模块源码**
+
+  [MIT](LICENSE) · [DSH](#开源协议与开发工具) · [Releases](https://github.com/yedanten/magisk-mzt-root-hidden/releases/latest)
+
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+  [![DSH License: MIT](https://img.shields.io/badge/DSH%20License-MIT-blue.svg)](#开源协议与开发工具)
+  [![100% AI Vibecoding](https://img.shields.io/badge/100%25-AI%20Vibecoding-ff69b4.svg)](#纯-ai-vibecoding-声明)
+  [![Platform: Magisk | Zygisk](https://img.shields.io/badge/Platform-Magisk%20%7C%20Zygisk-00a651.svg)](#)
+  [![Android: 14 / SDK 34](https://img.shields.io/badge/Android-14%20%2F%20SDK%2034-3ddc84.svg)](#)
+
+</div>
+
+> **License 声明**
+>
+> - **本项目**以 **[MIT 协议](LICENSE)** 开源，Copyright (c) 2026 yedanten —— 允许自由使用、复制、修改、合并、发布、分发、再许可和/或销售软件副本，唯一要求是保留版权声明与许可声明，软件按「原样」提供、不含任何担保。
+> - **开发工具 DSH（DeepSeek Harness）** 自身同样以 **MIT 协议**发布，Copyright (c) 2026 DeepSeek，条款要点与上文一致。
+> - 完整说明见 [开源协议与开发工具](#开源协议与开发工具)，协议正文见 [LICENSE](LICENSE)。
+>
+> 本项目是个人自用的社区项目，**非 DeepSeek 官方产品**，与 DeepSeek 无隶属关系；「DSH」仅代表开发所使用的工具。
+>
 > 一句话原理：**不去猜它检测到了什么，直接掐断「检测到 root → 弹窗 → 自杀」这条反应链。**
 
 ---
@@ -243,3 +263,8 @@ DSH 自身同样以 **MIT License** 发布，Copyright (c) 2026 DeepSeek，其�
 - 因此：代码风格可能跳脱，注释比代码还多，欢迎 issue / PR 指正。
 
 > Powered by **DSH — DeepSeek Harness** 🛠️
+
+---
+
+Licensed under the [MIT License](LICENSE). · 本项目以 MIT 协议开源。
+
