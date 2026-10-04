@@ -99,6 +99,18 @@ at com.wanjian.cockroach.Cockroach$1.run(Cockroach.java:47)
 
 ---
 
+## 下载
+
+不想自己编译的话，直接取已发布的成品：
+
+**[Releases → v1.1 · `MztKillModule-v1.1.zip`](https://github.com/yedanten/magisk-mzt-root-hidden/releases/latest)**
+
+- 这是 **Magisk 模块 zip**（不是 APK），模块 ID `mztkill`，version `v1.1` / versionCode `2`，**真机验证可用**。
+- 内含 `zygisk/arm64-v8a.so` 的 md5 为 `93cfc1d604f2acc1efc6e6119ec47ae7`，与仓库源码用 `build-zygisk.sh` 重编的产物**逐字节一致**。
+- 实验性的 LSPosed 模块（`MztRootHide.apk`）**不提供预编译下载** —— 实测注入会让闽政通在 1 秒内 SIGSEGV，装了就是坏的；确实需要的话请自行用 `build-lsposed.sh` 构建。
+
+---
+
 ## 构建
 
 ### Zygisk 模块（推荐）
@@ -112,7 +124,10 @@ export ANDROID_NDK_HOME=/path/to/android-ndk-r26d
 
 脚本会依次尝试 `ANDROID_NDK_HOME` → `ANDROID_NDK_ROOT` → `../toolchain/android-ndk-*` → 系统 SDK 目录来定位 NDK。
 
-### LSPosed 模块（历史存档）
+### LSPosed 模块（历史存档，不发布预编译产物）
+
+> 仓库**不提供**该 APK 的下载：实测它被注入闽政通后应用会立刻 SIGSEGV（见上文对照表），装了只会让应用崩溃。
+> 保留源码仅为记录这段弯路，需要复现请自行构建。
 
 依赖：JDK 17 + Android SDK Build-Tools（`d8`/`aapt2`/`zipalign`/`apksigner`）+ `android.jar`（API 34）。
 
